@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f6f6f6;
+  color: #333;
+}
+
+h1 {
+  color: #0066cc;
+  text-align: center;
+}
+
+form, table, .acciones {
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+input, button, select {
+  padding: 8px;
+  margin: 5px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004a99;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+#mensaje, #error {
+  text-align: center;
+  font-weight: bold;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  overflow-x: auto;
+}

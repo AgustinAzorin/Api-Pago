@@ -38,14 +38,18 @@ export class AuthService {
 
   async login(dto: LoginDTO): Promise<string> {
     const user = await this.userRepository.findByEmail(dto.email);
+    console.log("Buscando usuario con email:", dto.email);
+
     if (!user) {
       throw new Error("Credenciales incorrectas.");
     }
 
     const valid = await bcrypt.compare(dto.password, user.password_hash);
     if (!valid) {
+      console.log("No se encontró el usuario.");
+      console.log("Verificando password:", dto.password, "vs", user.password_hash);
       throw new Error("Credenciales incorrectas.");
-    }
+      }
 
     const token = jwt.sign(
       { id: user.id, username: user.username },

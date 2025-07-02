@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Transferencias - API Pagos</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <h1>Realizar Transferencia</h1>
+
+  <div>
+    <label for="destinatario">Destinatario (ID de cuenta):</label>
+    <input type="number" id="destinatario" required />
+  </div>
+  <div>
+    <label for="monto">Monto:</label>
+    <input type="number" id="monto" required />
+  </div>
+  <button id="btnConfirmar">Confirmar Pago</button>
+
+  <div id="mensaje" style="color: red;"></div>
+  <button id="volver">Volver al Dashboard</button>
+
+  <script src="../js/transfer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

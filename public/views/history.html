@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Historial - API Pagos</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <h1>Historial de Transferencias</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Fecha</th>
+        <th>Destinatario</th>
+        <th>Monto</th>
+        <th>Comprobante</th>
+      </tr>
+    </thead>
+    <tbody id="tablaHistorial"></tbody>
+  </table>
+
+  <button id="volver">Volver al Dashboard</button>
+
+  <div id="error" style="color: red;"></div>
+
+  <script src="../js/history.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

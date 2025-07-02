@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Reportes - API Pagos</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+  <h1>Generar Reporte</h1>
+
+  <div>
+    <label for="fromDate">Desde:</label>
+    <input type="date" id="fromDate" />
+  </div>
+  <div>
+    <label for="toDate">Hasta:</label>
+    <input type="date" id="toDate" />
+  </div>
+  <button id="btnGenerar">Generar Reporte</button>
+
+  <div id="resultado"></div>
+  <button id="volver">Volver al Dashboard</button>
+
+  <script src="../js/report.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
